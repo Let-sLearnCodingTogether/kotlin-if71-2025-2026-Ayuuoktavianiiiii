@@ -4,4 +4,11 @@ fun main() {
     users.forEach {
         println("ForEach : $it")
     }
+    users.forEach { user ->
+        println("ForEach : $user")
+    }
+
+    users.forEachIndexed { index, user ->
+        println("ForEach Index:  ${index+1} : $user")
+    }
 }
